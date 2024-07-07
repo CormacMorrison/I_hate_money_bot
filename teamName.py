@@ -22,7 +22,6 @@ def getMyPosition(prcSoFar):
     makeSureDoingWell = np.log(prcSoFar[:, -1] / prcSoFar[:, -nt])
     lastRet = lastRet + makeSureDoingWell
 
-    
     # normalise
     lNorm = np.sqrt(lastRet.dot(lastRet))
     lastRet /= lNorm
